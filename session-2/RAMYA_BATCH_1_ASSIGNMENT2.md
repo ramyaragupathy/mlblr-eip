@@ -6,6 +6,8 @@ Ramya Ragupathy|Batch 1
 
 ## Assignment 2B:
 
+Complete notebook available in [Github](https://github.com/ramyaragupathy/mlblr-eip/blob/master/session-2/nn_forward_backward.ipynb)
+
 **Step 0**: Read input and output
 
 ```python
