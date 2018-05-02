@@ -37,3 +37,5 @@ Each convolution/filter applied to an 2D-image tensor results in a new 2D tensor
 For eg: there might be one tensor for vertical line detection, one for horizontal line detection. All these are stacked with tensors form other convolutions. Result is a reperesentaiton of the image in three dimensions. 
 
 Moving across the first dimension means moving horizontaly through the image. Moving across second dimension means moving vertically through the image. Moving to the last dimension takes you from the output of one convolution to next. This last dimension is called channel dimension.
+
+Next set of convolution is applied to the 3D tensor that we got as output from the first layer of convolutions. Each set of convolutions that get applied at a time is called a layer. So the first layer of convolution takes the raw pixel intensities and translated them into a 3D tensor, indicating horizontal lines, vertical lines, dark spots and so on. So the second layer of convolutions takes the map of pattern locations as input and multiplies them with 3D convolutions tof ind more interesting patterns.
