@@ -1,7 +1,7 @@
 # Ramya Ragupathy | Batch 1 | Assignment 3
 Also available in [Github](https://github.com/ramyaragupathy/mlblr-eip/blob/master/session-3/RAMYA_BATCH_1_ASSIGNMENT3.md)
 
-## Data Augmentation:
+## Data Augmentation
 Going by the dictionary definition, augmentation refers to increasing the input data points. This is a technique used to increase the amount of data we have using our existing dataset.
 
 This is achieved using operations like flipping/rotating images. A CNN is expected to detect objects even when it is in different orientations - like in different size, position, lighting, colours. A neural network that's robust enough to detect objects in any different condition is said to be invariant. Data augmentation helps in achieving `invariance` by providing more examples using the existing dataset.
@@ -38,4 +38,6 @@ Activation functions are similar to the cell body of a neuron, that processes in
 ![image](https://user-images.githubusercontent.com/12103383/39525095-ac7d045c-4e38-11e8-8409-283979937fd8.png)
 
 _[Source](http://shodhganga.inflibnet.ac.in/bitstream/10603/48/6/chaper%204_c%20b%20bangal.pdf)_
+
+Without activation functions, output is just a linear function, that is a first degree polynomial which cannot handle complex relations between data. Activation functions introduce non-linearity accomodating complicated relationship betweem input and output.
 
