@@ -28,7 +28,12 @@ Initialisation refers to initialising the network with right weights. Initial we
 
 ### Random weight initialisation
 
-In tensor flow random weight initialisation can happen from a normal/gaussian distirbution or uniform distribution.
+In tensor flow random weight initialisation can happen from a normal/gaussian distirbution or uniform distribution. 
+
+Normal Distribution|Uniform distribution
+-------------------|--------------------
+![image](https://user-images.githubusercontent.com/12103383/39533949-fd2f0a2a-4e4d-11e8-8549-9318bcc658e5.png)|![image](https://user-images.githubusercontent.com/12103383/39533976-10604a82-4e4e-11e8-81cc-ae75638bf14d.png)
+
 
 
 ## Activation Functions
