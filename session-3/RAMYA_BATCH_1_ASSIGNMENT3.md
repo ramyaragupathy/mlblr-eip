@@ -39,5 +39,25 @@ Activation functions are similar to the cell body of a neuron, that processes in
 
 _[Source](http://shodhganga.inflibnet.ac.in/bitstream/10603/48/6/chaper%204_c%20b%20bangal.pdf)_
 
-Without activation functions, output is just a linear function, that is a first degree polynomial which cannot handle complex relations between data. Activation functions introduce non-linearity accomodating complicated relationship betweem input and output.
+Without activation functions, output is just a linear function, that is a first degree polynomial which cannot handle complex relations between data. Activation functions introduce non-linearity accomodating complicated relationship between input and output.
+
+### Sigmoid/Logistic function
+
+![sigmoid/logistic](https://user-images.githubusercontent.com/12103383/39526324-0bd3c9a6-4e3c-11e8-82b4-9d306fe18640.png)
+- Output in the range of (0,1). Since the outputs are bound to a range, input data does not blow up.
+- Sigmoid function tends to flatten/plateau beyond certain values on either side. This means for this range, gradients are very minimal and the network cannot learn further
+
+### Rectified Linear Units(ReLu)
+
+![ReLu](https://user-images.githubusercontent.com/12103383/39527037-1124022a-4e3e-11e8-8899-ae2143c46726.png)
+
+
+This gives an output X if the input X is positive, or 0 otherwise.
+-  Output in the range of between (0, inf)
+-  For random weights, only +ve inputs will be transferred to the next layer. So for negative values, gradient is zero and the network is unresponsive.
+
+### Leaky ReLU
+
+
+
 
