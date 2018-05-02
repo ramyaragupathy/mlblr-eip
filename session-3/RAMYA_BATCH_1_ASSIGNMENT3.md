@@ -46,17 +46,30 @@ Without activation functions, output is just a linear function, that is a first 
 ![sigmoid/logistic](https://user-images.githubusercontent.com/12103383/39526324-0bd3c9a6-4e3c-11e8-82b4-9d306fe18640.png)
 - Output in the range of (0,1). Since the outputs are bound to a range, input data does not blow up.
 - Sigmoid function tends to flatten/plateau beyond certain values on either side. This means for this range, gradients are very minimal and the network cannot learn further
+- Ideal for cases where output is a probability
 
 ### Rectified Linear Units(ReLu)
 
-![ReLu](https://user-images.githubusercontent.com/12103383/39527037-1124022a-4e3e-11e8-8899-ae2143c46726.png)
+![ReLu](https://user-images.githubusercontent.com/12103383/39527409-f8cbfc72-4e3e-11e8-9706-8ffe34e1b40b.png)
 
 
 This gives an output X if the input X is positive, or 0 otherwise.
--  Output in the range of between (0, inf)
--  For random weights, only +ve inputs will be transferred to the next layer. So for negative values, gradient is zero and the network is unresponsive.
+-  Output in the range of between (0, infinity)
+-  For random weights, only +ve inputs will be transferred to the next layer. So for negative values, output is 0, gradient is zero and the neuron is unresponsive. This is called a `Dying ReLu` problem.
 
 ### Leaky ReLU
+
+![LeakyReLu](https://user-images.githubusercontent.com/12103383/39527902-4e9c824c-4e40-11e8-9666-1bce8165401a.png)
+
+- Fixes the Dying Relu problem with a small slope/gradient for negative values. Increased range of output values (-infinity, infinity). 
+
+
+### Exponential Linear Units(ELU)
+
+![ELU](https://user-images.githubusercontent.com/12103383/39528302-5d62cf1a-4e41-11e8-8636-5e67c1e3f532.png)
+
+- Similar to Leaky ReLU, fixes the slope for negative values, but instead of a linear function, uses an exponential function.
+
 
 
 
