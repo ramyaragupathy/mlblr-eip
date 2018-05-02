@@ -31,3 +31,9 @@ Numerical value in the convolutin tensor decides what pattern it detects in a se
 Once a filter is created, it is applied to each part of the image. Output is mapped to a output tensor. Thsi gives a map of where the associated pattern shows up in the image. 
 
 Different convolutions/ filters captures different aspects of the original image. In practice, numbers in a filter/convolution are set by us during the training process using gradient descent & backpropogation processes.
+
+Each convolution/filter applied to an 2D-image tensor results in a new 2D tensor. All the 2D tensors from different convolutions are stacked together to form a single 3D tensor.
+
+For eg: there might be one tensor for vertical line detection, one for horizontal line detection. All these are stacked with tensors form other convolutions. Result is a reperesentaiton of the image in three dimensions. 
+
+Moving across the first dimension means moving horizontaly through the image. Moving across second dimension means moving vertically through the image. Moving to the last dimension takes you from the output of one convolution to next. This last dimension is called channel dimension.
