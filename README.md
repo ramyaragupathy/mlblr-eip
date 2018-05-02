@@ -11,3 +11,19 @@ Image is composed of pixels and pixels are present in rows and columns. So it is
 Colour images have an extra dimension. There are each matrices, with pixel in each matrix value showing how red/green/blue the pixel is. 
 
 Tensor is the word for something like a matix but with which can have any number of dimensions. So these matrices could be called tensors.
+
+
+## Convolution
+
+Today's deep learning models apply something called convolutions to image tensors. A convolution is a small tensor that can be multiplied over little sections of a main image.
+
+Depending on values in the convolution array, it can pick out specific patterns from the image.
+eg: Horizontal line detector:
+
+|1.5|1.5|
+----|----
+|-1.5|-1.5|
+
+When multiplied on an image section with horizontal line, it results in a large value. When applied over a section without horizontal line, it gives a value close to zero.
+
+Numerical value in the convolutin tensor decides what pattern it detects in a section of the image.
