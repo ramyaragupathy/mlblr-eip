@@ -28,11 +28,22 @@ Initialisation refers to initialising the network with right weights. Initial we
 
 ### Random weight initialisation
 
-In tensor flow random weight initialisation can happen from a normal/gaussian distirbution or uniform distribution. 
+In tensor flow random weight initialisation is done using a standard normal/gaussian distribution.
 
-Normal Distribution|Uniform distribution
--------------------|--------------------
-![image](https://user-images.githubusercontent.com/12103383/39533949-fd2f0a2a-4e4d-11e8-8549-9318bcc658e5.png)|![image](https://user-images.githubusercontent.com/12103383/39533976-10604a82-4e4e-11e8-81cc-ae75638bf14d.png)
+ `np.random.rand(rows, cols)`
+
+![image](https://user-images.githubusercontent.com/12103383/39533949-fd2f0a2a-4e4d-11e8-8549-9318bcc658e5.png)
+_zero mean and standard deviation 1_
+
+
+Too small weights/parameters | Too large weights/parameters
+---------------------|---------------------
+**Vanishing gradients problem:**
+Variance reduces in each layer, resulting in smaller gradient. This means weights cannot change greatly and the learning stagnates|**Exploding gradients:** In case of large positive values, weights when multiplied with input values, results in larger outputs. So the variance and the gradient increases with information flow between layers. When the gradient is big, change in weights is also huge i.e the downward descent along the curve will be in large steps. Leanring algorithm might overshoot the global minimum and convergence might never occur
+
+###
+
+
 
 
 
