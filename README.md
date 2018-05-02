@@ -27,3 +27,7 @@ eg: Horizontal line detector:
 When multiplied on an image section with horizontal line, it results in a large value. When applied over a section without horizontal line, it gives a value close to zero.
 
 Numerical value in the convolutin tensor decides what pattern it detects in a section of the image.
+
+Once a filter is created, it is applied to each part of the image. Output is mapped to a output tensor. Thsi gives a map of where the associated pattern shows up in the image. 
+
+Different convolutions/ filters captures different aspects of the original image. In practice, numbers in a filter/convolution are set by us during the training process using gradient descent & backpropogation processes.
