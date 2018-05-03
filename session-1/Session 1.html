@@ -1,0 +1,1191 @@
+<html>
+                 <head>
+                   <meta charset="UTF-8">
+                   <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+                   <style id="style">
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+       url('file:///Applications/Boostnote.app/Contents/Resources/app/resources/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-size: 16px;
+  padding: 15px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+body .katex {
+  font: 400 1.2em 'KaTeX_Main';
+  line-height: 1.2em;
+  white-space: initial;
+  text-indent: 0;
+}
+body .katex .mfrac>.vlist>span:nth-child(2) {
+  top: 0 !important;
+}
+body .katex-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+body .flowchart-error,
+body .sequence-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+}
+li label.taskListItem {
+  margin-left: -1.8em;
+}
+li label.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+div.math-rendered {
+  text-align: center;
+}
+.math-failed {
+  background-color: rgba(255,0,0,0.1);
+  color: #d90000;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+sub {
+  position: relative;
+  bottom: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+a {
+  color: #2bac8f;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: -5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+}
+a img {
+  vertical-align: sub;
+}
+a:hover {
+  color: #2eb899;
+  text-decoration: underline;
+  background-color: rgba(255,201,92,0.3);
+}
+a:visited {
+  color: #2bac8f;
+}
+hr {
+  border-top: none;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 15px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 2.55em;
+  padding-bottom: 0.3em;
+  line-height: 1.2em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.44em;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.57em;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43em;
+  margin: 1em 0 0.66em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 1em 0 0.8em;
+}
+h5 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+  color: #777;
+}
+p {
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+img {
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+s,
+del,
+strike {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: solid 4px #3fb399;
+  margin: 0 0 1em;
+  padding: 0 25px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ul li {
+  display: list-item;
+}
+ul li.taskListItem {
+  list-style: none;
+}
+ul li p {
+  margin: 0;
+}
+ul>li>ul,
+ul>li>ol {
+  margin: 0;
+}
+ul>li>ul {
+  list-style-type: circle;
+}
+ul>li>ul>li>ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ol li {
+  display: list-item;
+}
+ol li p {
+  margin: 0;
+}
+ol>li>ul,
+ol>li>ol {
+  margin: 0;
+}
+code {
+  color: #cc305f;
+  padding: 0.2em 0.4em;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 2px;
+}
+pre {
+  padding: 0.5em !important;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0 0 1em;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  line-height: 1.4em;
+}
+pre.flowchart,
+pre.sequence {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+}
+pre.CodeMirror {
+  height: initial;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.CodeMirror>code {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: auto;
+}
+pre code {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+pre>span.filename {
+  width: 100%;
+  border-radius: 5px 0px 0px 0px;
+  margin: -8px 100% 8px -8px;
+  padding: 0px 6px;
+  background-color: #777;
+  color: #fff;
+}
+pre>span.lineNumber {
+  display: none;
+  font-size: 1em;
+  padding: 0.5em 0;
+  margin: -0.5em 0.5em -0.5em -0.5em;
+  border-right: 1px solid;
+  text-align: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+pre>span.lineNumber.CodeMirror-gutters {
+  position: initial;
+  top: initial;
+  left: initial;
+  min-height: 0 !important;
+}
+pre>span.lineNumber>span {
+  display: block;
+  padding: 0 0.5em 0;
+}
+table {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+}
+table thead tr {
+  background-color: #fff;
+}
+table thead th {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 1px 0 2px 1px;
+  border-color: #d0d0d0;
+  font-weight: bold;
+}
+table thead th:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+table tbody td {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 0 0 1px 1px;
+  border-color: #d0d0d0;
+}
+table tbody td:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #d0d0d0;
+  border-bottom-color: #888;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 5px;
+}
+body[data-theme="dark"] {
+  color: #f9f9f9;
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] a:hover {
+  background-color: rgba(90,214,186,0.2) !important;
+}
+body[data-theme="dark"] code {
+  color: #ea6730;
+  border-color: #3d4450;
+  background-color: #363a3e;
+}
+body[data-theme="dark"] pre {
+  border-color: #474f5c;
+}
+body[data-theme="dark"] pre code {
+  background-color: transparent;
+}
+body[data-theme="dark"] label.taskListItem {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table thead tr {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n) {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] kbd {
+  background-color: #444b59;
+  color: #f9f9f9;
+}
+body[data-theme="solarized-dark"] {
+  color: #93a1a1;
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table thead tr {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n) {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+/*# sourceMappingURL=browser/components/markdown.css.map */
+body {
+  font-family: 'Helvetica','helvetica','arial','sans-serif';
+  font-size: 14px;
+  padding-bottom: 90vh;
+}
+code {
+  font-family: 'Monaco','Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+  background-color: rgba(0,0,0,0.04);
+}
+.lineNumber {
+  false
+  font-family: 'Monaco','Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+}
+
+.clipboardButton {
+  color: rgba(147,147,149,0.8);;
+  fill: rgba(147,147,149,1);;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.clipboardButton:hover {
+  transition: 0.2s;
+  color: #939395;
+  fill: #939395;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  border: none;
+}
+
+h1 {
+  padding-bottom: 4px;
+  margin: 1em 0 8px;
+}
+
+h2 {
+  padding-bottom: 0.2em;
+  margin: 1em 0 0.37em;
+}
+
+body p {
+  white-space: normal;
+}
+</style>
+                   <link rel="stylesheet" href="css/dracula.css"><link rel="stylesheet" href="css/katex.min.css"><link rel="stylesheet" href="css/codemirror.css">
+                 </head>
+                 <body><h1 data-line="0" id="Session-1">Session 1</h1>
+<p data-line="2"><img src="images/0.mwp71v173u" alt="0.mwp71v173u" /></p>
+<hr />
+<p data-line="5">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="14">&gt;Welcome Everyone!<br />
+&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="23"><strong>Perface? Sort of!</strong></p>
+<ol>
+<li>We received staggering 660+ application for this EIP</li>
+<li>Finally we have 445 EInterns, split into 7 Batches</li>
+<li>Professional vs Student ratio is not 85+%!</li>
+<li>People from your batch are from - DxC Technology - First American, Freelancer, Ernst &amp; Young, Thorogood Associates, IISc, Neustar, KNAB FInance, Accenture, Sigtuple, Mahindra Electric Mobility Ltd., Moody's Analytics, Skillspeed, Cognizant Technology Solutions, Bsharp Sales Enabler, Jifflenow, NVIDIA, Amazon, Kint, IBM, CMR, IIIT, InGene Dynamics, Alten Calsoft Labs, Porter, Geekskool, SAP Labs, Tharsha Ventures, Touchkin, Analytics Quotient, Microchip, Unisys, HP, TCS, IMS Health, Reflik, 3 Frames Lab, Velotio Technologies, Mu Sigma, Capgemini, KNOWLEDGEHUT, HCL, NVIDIA, etc.</li>
+<li>We are really proud of what we are trying to achieve here today!</li>
+</ol>
+<p data-line="30"><img src="images/0.t6mbfb2y7rj" alt="0.t6mbfb2y7rj" /></p>
+<p data-line="32">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="41"><strong>Administrative Stuff:</strong></p>
+<ol>
+<li>Make sure you have a Google Colab Account</li>
+<li>Make sure you are there on main WhatsApp group. Please keep this group &quot;Mute&quot; as people are posting random stuff.</li>
+<li>Please join our Discourse forum, hosted at <a href="http://mlblr.com/discourse">mlblr.com/discourse</a> to discuss about topics</li>
+</ol>
+<p data-line="46">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h3 data-line="55" id="External-Internship-Program">External Internship Program</h3>
+<ol>
+<li>We have 2 hours of 10 session, spread over 40-50 days</li>
+<li>2 hours per session is really too less to become a master.</li>
+<li>Our aim is to get you started, covering the fundamentals. Unless you spend at least 3-4 hours on your own reading-doing stuff, this program would fail for you.</li>
+<li>Assignments are designed to this specific purpose. Since 87.5% are from industry, there might be some resistance to become a student again, but let's try!</li>
+<li>Our relation with you is &quot;Driving Instructor - New Driver&quot; and not of &quot;Professor - Student&quot;. This means our focus is on to help you drive the car, not to understand it's internal fundamentals (a rule we will break many times).</li>
+<li>If the batch is running slow, we will cover lesser content in 10 sessions, instead of rushing through everything.</li>
+</ol>
+<p data-line="64">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="73" id="Lets-get-started">Let's get started</h2>
+<p data-line="76">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="85">&gt; This is how we want you to feel after the 10 sessions<br />
+&gt;<br />
+<img src="http://teamjimmyjoe.com/wp-content/uploads/2017/02/funny-Little-Kim-Jong-un.gif" alt="PUNCH" /></p>
+<p data-line="90">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h3 data-line="99" id="Building-the-Intuition">Building the Intuition!</h3>
+<p data-line="101">&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="104">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="113">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h5 data-line="120" id="OUR-BRAIN">OUR BRAIN</h5>
+<p data-line="121"><img src="https://media.giphy.com/media/rUtDCuiPlFE52/giphy-downsized-large.gif" alt="firing" /></p>
+<p data-line="123">&gt; An ultra dense connected network of flowing information</p>
+<p data-line="126">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="135" id="EYES">EYES</h2>
+<p data-line="137"><img src="https://i.pinimg.com/originals/06/7b/3b/067b3baae3260fef5fbe8bae7462a3f8.jpg" alt="eye" /></p>
+<p data-line="139">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="148"><img src="http://3.bp.blogspot.com/-Elau01j_Uy8/VnWucwCsm_I/AAAAAAAALEs/03zy4R_sAoI/s1600/CrossSection.JPG" alt="image" width="500" /></p>
+<p data-line="150">&gt;Light to Neurons</p>
+<p data-line="152">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="161">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="170"><img src="https://www.micronaut.ch/wp-content/uploads/2012/12/%C2%A9-Micronaut-Human-Retina-006364.jpg" alt="cells" /></p>
+<p data-line="173">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&gt;This is where image to RGB/GrayScale convesion ends!<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="191" id="BORED-CAT-EXPERIMENT">BORED CAT EXPERIMENT</h2>
+<p data-line="193"><img src="http://gif-finder.com/wp-content/uploads/2015/12/Bored-cat.gif" alt="bored cat" width="500" /></p>
+<p data-line="195"><img src="https://media.giphy.com/media/5gUnOrltPvZzW/giphy.gif" alt="bored cat2" /><br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="207"><img src="http://fourier.eng.hmc.edu/e180/lectures/figures/retinotopicmap.gif" alt="red" /><br />
+&gt; Radioactive Glucose<br />
+&gt;</p>
+<p data-line="213">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="222">Retinotopic Map</p>
+<p data-line="224"><img src="https://www.researchgate.net/profile/Daniel_Simons2/publication/7994860/figure/fig3/AS:279070249111558@1443546940146/Subcortical-visual-pathwayConverging-neuroscientific-evidence-indicates-that-there-is-a.png" alt="map" width="400" /></p>
+<p data-line="226"><img src="http://www.cns.nyu.edu/~david/courses/perception/lecturenotes/V1/LGN-V1-slides/Slide12.jpg" alt="cortical magnification" width="500" /></p>
+<p data-line="228">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="237">Edge Detection<br />
+<img src="http://www.utdallas.edu/~tres/integ/sen4/8_05.jpg" alt="poorcat" width="300" /></p>
+<p data-line="241">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="250">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="260" id="Coretex-Processing">Coretex Processing</h2>
+<p data-line="262"><img src="http://bethycotter.wdfiles.com/local--files/introducingtheeye/Screen%20Shot%202012-08-24%20at%2011.36.20%20PM.png" alt="cortex" width="600" /></p>
+<p data-line="264">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="273">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="283"><img src="images/image.gif" alt="image.gif" /><br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="293"><img src="https://www.frontiersin.org/files/Articles/34845/fpsyg-04-00124-HTML/image_m/fpsyg-04-00124-g001.jpg" alt="detailed" width="400" /></p>
+<p data-line="295">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="304">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<hr />
+<h1 data-line="316" id="Back-to-Neural-Computing">Back to Neural Computing</h1>
+<p data-line="318">We need feature extraction methods and then combining methods</p>
+<p data-line="320"><img src="http://aishack.in/static/img/tut/conv-line-detection-horizontal-result.jpg" alt="one" width="200" /><br />
+<img src="http://aishack.in/static/img/tut/conv-edge-detection-result.jpg" alt="two" width="200" /><br />
+<img src="http://aishack.in/static/img/tut/conv-sobel-result.png" alt="three" width="200" /><br />
+<img src="http://aishack.in/static/img/tut/conv-laplacian-result.png" alt="four" width="200" /></p>
+<p data-line="325">Let's look at some code.</p>
+<h1 data-line="327" id="Welcome-Convolution---Feature-Extraction">Welcome Convolution - Feature Extraction</h1>
+<p data-line="328"><img src="https://ujwlkarn.files.wordpress.com/2016/08/giphy.gif" alt="image" width="400" /></p>
+<h2 data-line="330" id="Combining-these-concepts">Combining these concepts</h2>
+<p data-line="331"><img src="https://ujwlkarn.files.wordpress.com/2016/08/conv_all.png" alt="image" width="500" /></p>
+<p data-line="333">Closer Look</p>
+<p data-line="335"><img src="https://ujwlkarn.files.wordpress.com/2016/08/screen-shot-2016-08-06-at-12-45-35-pm.png" alt="image" width="500" /></p>
+<p data-line="337">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h1 data-line="354" id="Concepts">Concepts</h1>
+<p data-line="356">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="373" id="What-is-convolution">What is convolution?</h2>
+<p data-line="375"><img src="images/4-2ConvolutionSmall.gif" alt="4-2ConvolutionSmall.gif" /></p>
+<h2 data-line="380" id="input28x28x1">input(28x28x1)</h2>
+<h2 data-line="381" id="Conv2D32-3-3-actReLU">Conv2D(32, 3, 3, act=ReLU) &gt;?</h2>
+<h2 data-line="382" id="MaxPooling2">MaxPooling(2) &gt;?</h2>
+<h2 data-line="383" id="Activation-ReLU-Useless-here">Activation (ReLU) &lt;&lt; Useless here.</h2>
+<h2 data-line="384" id="Conv2D10-1-1-actReLU-Perfectly-OK">Conv2D(10, 1, 1, act=ReLU) Perfectly OK</h2>
+<h2 data-line="385" id="Conv2D10-13-13-actNone">Conv2D(10, 13, 13, act=None) &gt;?</h2>
+<h2 data-line="386" id="SoftMax">SoftMax()</h2>
+<h2 data-line="387" id="CompileFitOptimize">Compile/Fit/Optimize</h2>
+<p data-line="388">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="397">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="406" id="What-do-we-gain-and-what-do-we-lose">What do we gain and what do we lose?</h2>
+<p data-line="408">![5-3 Convolution Small.gif](images/5-3 Convolution Small.gif)</p>
+<p data-line="411">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="420">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="429" id="Why-do-we-add-layers">Why do we add layers?</h2>
+<p data-line="431">![Receptive Field Small.gif](images/Receptive Field Small.gif)</p>
+<p data-line="434">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="443">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="452" id="How-many-layers-would-we-need-to-move-from-400x400-image-to-100-numbers">How many layers would we need to move from 400x400 image to 100 numbers?</h2>
+<p data-line="455">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="472" id="MaxPooling-about-to-get-obsolete">MaxPooling (about to get obsolete)</h2>
+<p data-line="474">![MaxPool Small.gif](images/MaxPool Small.gif)</p>
+<p data-line="477">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="486">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="495" id="Lets-build-a-network">Let's build a network!</h2>
+<p data-line="496">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="505">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="516" id="3x3-is-a-lie-How-convolution-actually-works">3x3 is a lie! How convolution actually works?</h2>
+<p data-line="518"><img src="images/convolution.gif" alt="convolution.gif" /><br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="528">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="537" id="The-reason-for-dimensional-reductionality">The reason for dimensional reductionality!</h2>
+<p data-line="539">But what about z (or channels)?<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="549">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="558" id="Welcome-to-1x1-convolution">Welcome to 1x1 convolution?</h2>
+<p data-line="560">![1x1 2.png](images/1x1 2.png)</p>
+<p data-line="562">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="571">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="580" id="Lets-see-some-animation">Let's see some animation.</h2>
+<p data-line="583">![1x1 convolution.png](images/1x1 convolution.png)</p>
+<h2 data-line="584" id="Lets-build-the-network-again">Let's build the network again!</h2>
+<p data-line="585">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="594">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h2 data-line="603" id="What-happens-when-we-train-a-network">What happens when we train a network?</h2>
+<p data-line="605">This is what happens over a period of time to our neurons/kernels/filters<br />
+<img src="https://camo.githubusercontent.com/33c848b845290ce25497d00a6e3f1a3d02216772/687474703a2f2f6172732d6173687568612e72752f7064662f766473646e6e2f636f6e762e676966" alt="image" /><br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<p data-line="616">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h1 data-line="625" id="Lets-look-at-the-code">Let's look at the code:</h1>
+<pre class="code CodeMirror"><span class="filename"></span><span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span><span class="CodeMirror-linenumber">5</span><span class="CodeMirror-linenumber">6</span></span><code class="python"> 
+model.add(Convolution2D(32, 3, 3, activation=&#39;relu&#39;, input_shape=(28,28,1)))
+model.add(Convolution2D(10, 1, activation=&#39;relu&#39;))
+model.add(Convolution2D(10, 26))
+model.add(Flatten())
+model.add(Activation(&#39;softmax&#39;))
+</code></pre>
+<h1 data-line="635" id="bitly2IBqQJD"><a href="http://bit.ly/2IBqQJD">bit.ly/2IBqQJD</a></h1>
+<p data-line="638">&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h1 data-line="647" id="Story-of-Harry-Potter">Story of Harry Potter</h1>
+<p data-line="649">&gt; I didn't read the book!<br />
+&gt;</p>
+<table data-line="652">
+<thead>
+<tr>
+<th>Character</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Harry</td>
+<td>28</td>
+</tr>
+<tr>
+<td>Me</td>
+<td>24 :D</td>
+</tr>
+<tr>
+<td>You</td>
+<td>30 XD</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<p data-line="658"><img src="https://www.irishtimes.com/polopoly_fs/1.3170107.1501253408!/image/image.jpg_gen/derivatives/box_620_330/image.jpg" alt="" width="300" /></p>
+<p data-line="660"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup><mo>=</mo><mi>f</mi><mo>(</mo><mi>H</mi><mi>a</mi><mi>r</mi><mi>r</mi><mi>y</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">x_2^2 = f(Harry)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="base"><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-2.4518920000000004em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.24810799999999997em;"></span></span></span></span></span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mord rule" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathit" style="margin-right:0.08125em;">H</span><span class="mord mathit">a</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.02778em;">r</span><span class="mord mathit" style="margin-right:0.03588em;">y</span><span class="mclose">)</span></span></span></span><br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;<br />
+&lt;br&gt;</p>
+<h1 data-line="670" id="ASSIGNMENT-1">ASSIGNMENT 1</h1>
+<ul>
+<li>Download Boostnote (or any markdown editor you prefer)</li>
+<li>You can refer this link to learn about markdown: <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">Markdown Cheatsheet</a></li>
+<li>Write 2 articles between 100-200 words in markdown and email back your file in this format <strong>FIRSTNAME_BATCH_X_ASSIGNMENT1.md</strong></li>
+<li>You must mention your name, batch number in your markdown file.</li>
+<li>Your markdown file must have an image of your choice.</li>
+<li>You can pick any 2 from these topics:
+<ul>
+<li>Convolution</li>
+<li>Filters/Kernels</li>
+<li>Epochs</li>
+<li>1x1 convolution</li>
+<li>3x3 convolution</li>
+<li>Feature Maps</li>
+<li>Feature Engineering</li>
+</ul>
+</li>
+<li>Bonus points if you write on any of these:
+<ul>
+<li>Activation Function</li>
+<li>How to create an account on GitHub and upload a sample project</li>
+<li>Receptive Field.</li>
+<li>10 examples of use of MathJax in Markdown</li>
+</ul>
+</li>
+<li>Deadline Tuesday 11:30PM</li>
+<li>You <strong>MUST</strong> use your own words while writing any of the above, if we find plagiarism, 0 marks would be awarded for that article.</li>
+</ul>
+</body>
+              </html>
