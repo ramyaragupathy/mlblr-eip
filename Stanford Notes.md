@@ -69,6 +69,13 @@ Subfields in Image classification
 
 ![image](https://user-images.githubusercontent.com/12103383/40223652-65559db2-5aa1-11e8-8cf2-60dbb676f040.png)
 
+![image](https://user-images.githubusercontent.com/12103383/40223754-b8ad2836-5aa1-11e8-8637-73461f548f18.png)
+
+Algorithms winning Imagenet challenge:
+
+![image](https://user-images.githubusercontent.com/12103383/40223786-d28b0282-5aa1-11e8-880f-a9bb39a97a39.png)
+
+
 
 
 
