@@ -57,6 +57,7 @@ Feature sint he images that can give us clues about what kind of scene it is.
 
 ![image](https://user-images.githubusercontent.com/12103383/40223215-e6ca5f88-5a9f-11e8-9d17-6dc94cdb10e4.png)
 
+![image](https://user-images.githubusercontent.com/12103383/40223393-888a2ee8-5aa0-11e8-993c-8995c8eccca1.png)
 
 
 
