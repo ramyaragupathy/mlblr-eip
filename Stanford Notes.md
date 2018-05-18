@@ -35,5 +35,23 @@ This initial seminal work was done using graph theory for image segmentation.
 
 ![image](https://user-images.githubusercontent.com/12103383/40222898-af2930f0-5a9e-11e8-9bb6-db8f70f2460a.png)
 
+### Spatial Pyramid Matching
+
+Feature sint he images that can give us clues about what kind of scene it is.
+![image](https://user-images.githubusercontent.com/12103383/40223014-287e57dc-5a9f-11e8-9037-94a7a0eac9b8.png)
+
+### Human Recognition
+
+![image](https://user-images.githubusercontent.com/12103383/40223065-6480308e-5a9f-11e8-850f-b44ba46b9999.png)
+
+
+### PASCAL Visual Object Challenge
+
+- 20 Object classes
+- several thousand images per category
+
+![image](https://user-images.githubusercontent.com/12103383/40223126-a0307012-5a9f-11e8-856b-50af68617cbb.png)
+
+
 
 
