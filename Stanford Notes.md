@@ -18,8 +18,22 @@
 
 ![image](https://user-images.githubusercontent.com/12103383/40222208-6d2bf504-5a9c-11e8-8a5a-0ce5027b0aaf.png)
 
+
 ### Object Recognition vs Object Segmentation
 
-While object recognition is the overall goal, that was too difficult to achieve initially. First step was to do object segmentation, where similar pixels are clubbed/grouped together. 
+While object recognition is the overall goal, that was too difficult to achieve initially. First step was to do object segmentation, where similar pixels are clubbed/grouped together.
+This initial seminal work was done using graph theory for image segmentation. 
 
 ![image](https://user-images.githubusercontent.com/12103383/40222627-c217de4c-5a9d-11e8-8b2f-15446caa2da1.png)
+
+
+### Face Recognition
+
+![image](https://user-images.githubusercontent.com/12103383/40222796-59f4d8b4-5a9e-11e8-9024-6107362ce46c.png)
+
+### Feature based object recognition
+
+![image](https://user-images.githubusercontent.com/12103383/40222898-af2930f0-5a9e-11e8-9bb6-db8f70f2460a.png)
+
+
+
