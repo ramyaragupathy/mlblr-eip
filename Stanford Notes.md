@@ -60,5 +60,16 @@ Feature sint he images that can give us clues about what kind of scene it is.
 ![image](https://user-images.githubusercontent.com/12103383/40223393-888a2ee8-5aa0-11e8-993c-8995c8eccca1.png)
 
 
+## Image classification is a part of Computer vision problem
+
+Subfields in Image classification
+
+- Object recognition
+- Image captioning
+
+![image](https://user-images.githubusercontent.com/12103383/40223652-65559db2-5aa1-11e8-8cf2-60dbb676f040.png)
+
+
+
 
 
