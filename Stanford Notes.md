@@ -21,3 +21,5 @@
 ### Object Recognition vs Object Segmentation
 
 While object recognition is the overall goal, that was too difficult to achieve initially. First step was to do object segmentation, where similar pixels are clubbed/grouped together. 
+
+![image](https://user-images.githubusercontent.com/12103383/40222627-c217de4c-5a9d-11e8-8b2f-15446caa2da1.png)
