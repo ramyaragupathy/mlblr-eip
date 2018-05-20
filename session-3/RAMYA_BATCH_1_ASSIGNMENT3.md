@@ -38,13 +38,13 @@ _zero mean and standard deviation 1_
 
 Too small weights/parameters | Too large weights/parameters
 ---------------------|---------------------
-**Vanishing gradients problem:** Variance reduces in each layer, resulting in smaller gradient. This means weights cannot change greatly and the learning stagnates.|**Exploding gradients:** In case of large positive values, weights when multiplied with input values, results in larger outputs. So the variance and the gradient increases with information flow between layers. When the gradient is big, change in weights is also huge i.e the downward descent along the curve will be in large steps. Leanring algorithm might overshoot the global minimum and convergence might never occur.
+**Vanishing gradients problem:** Variance reduces in each layer, resulting in smaller gradient. This means weights cannot change greatly and the learning stagnates.|**Exploding gradients:** In case of large positive values, weights when multiplied with input values, results in larger outputs. So the variance and the gradient increases with information flow between layers. When the gradient is big, change in weights is also huge i.e the downward descent along the curve will be in large steps. Learning algorithm might overshoot the global minimum and convergence might never occur.
 
 ### Xavier initialisation
 
-Xavier/Glorot initialisation is based on the method proposed by [Xavier Glorot](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf). This method tackles both vanishing & expldoing gradients problems and initialises the right set of weights such that the variance remains the same across layers.
+Xavier/Glorot initialisation is based on the method proposed by [Xavier Glorot](http://proceedings.mlr.press/v9/glorot10a/glorot10a.pdf). This method tackles both vanishing & exploding gradients problems and initialises the right set of weights such that the variance remains the same across layers.
 
-Per the paper, this method picks weights from a Normal/Gaussian distribution with zero mean and variance 1/n where n is the average number of input & output neurons. However this variance implementation itself varie sin different engines. eg:Caffe uses the number of input neurons for n.
+Per the paper, this method picks weights from a Normal/Gaussian distribution with zero mean and variance 1/n where n is the average number of input & output neurons. However this variance implementation itself varies in different engines. eg:Caffe uses the number of input neurons for n.
 
 
 
